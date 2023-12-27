@@ -1,15 +1,15 @@
-import { useState } from 'react';
 import { Button, Box, Checkbox, FormControl, FormLabel, Slider, SliderTrack, SliderFilledTrack, SliderThumb, Flex, Textarea, useClipboard, Heading, Link, Icon } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
+import { useState } from 'react';
 
 const PasswordGenerator = () => {
   const [passwords, setPasswords] = useState([]);
-  const [length, setLength] = useState(10); // Default password length
+  const [length, setLength] = useState(16);
   const [includeUpperCase, setIncludeUpperCase] = useState(true);
   const [includeLowerCase, setIncludeLowerCase] = useState(true);
   const [includeSymbols, setIncludeSymbols] = useState(true);
   const [includeNumbers, setIncludeNumbers] = useState(true);
-  const [numPasswords, setNumPasswords] = useState(5); // Default number of passwords
+  const [numPasswords, setNumPasswords] = useState(5);
   const { hasCopied: allCopied, onCopy: copyAll } = useClipboard(passwords.join('\n'));
   const { hasCopied: firstCopied, onCopy: copyFirst } = useClipboard(passwords[0] || '');
 
@@ -108,8 +108,8 @@ const PasswordGenerator = () => {
           </Flex>
 
           <Textarea value={passwords.join('\n\n')} isReadOnly rows={5} bg="gray.700" color="teal.200" w="100%" />
-          {allCopied && <p>All passwords copied!</p>}
-          {firstCopied && <p>First password copied!</p>}
+          {allCopied && <p style={{ textAlign: 'center' }}>All passwords copied!</p>}
+          {firstCopied && <p style={{ textAlign: 'center' }}>First password copied!</p>}
         </Box>
         <Box
           position="absolute"
@@ -122,13 +122,13 @@ const PasswordGenerator = () => {
           fontSize="sm"
         >
           <p>Made by MegalithOfficial</p>
-          <Link href="https://github.com/yourusername/your-repo" isExternal display="inline-block" color="white">
+          <Link href="https://github.com/MegalithOfficial/simple-password-generator" isExternal display="inline-block" color="white">
             <Flex alignItems="center" justifyContent="center">
               <Icon as={FaGithub} mr={1} />
               Github
             </Flex>
           </Link>
-          <p>Your generated passwords are not saved or sent over the internet.</p>
+          <p textAlign="center">Your generated passwords are not saved or sent over the internet.</p>
         </Box>
       </Box>
     </Flex>

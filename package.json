@@ -39,5 +39,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MegalithOfficial/simple-password-generator.git"
+  },
+  "author": "MegalithOfficial",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MegalithOfficial/simple-password-generator/issues"
+  },
+  "homepage": "https://github.com/MegalithOfficial/simple-password-generator#readme"
 }
