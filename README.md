@@ -10,7 +10,9 @@ A modern, web-based application built with React.js and Chakra UI that facilitat
 
 ## Demo
 
-[Include a GIF or screenshot showcasing the application's interface or functionality.]
+<p align="center">
+ <img src="https://github.com/MegalithOfficial/simple-password-generator/blob/master/demo.gif">
+</p>
 
 ## Installation
 
