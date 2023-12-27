@@ -1,6 +1,6 @@
 # Password Generator
 
-A modern, web-based application built with React.js and Chakra UI that facilitates the generation of secure passwords based on specific user criteria.
+A modern, web-based application built with React.js and Chakra UI that facilitates the generation of secure passwords based on specific criterias.
 
 ## Features
 
